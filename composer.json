@@ -1,0 +1,17 @@
+{
+    "name": "shokr/self-destructing-message",
+    "description": "self-destructing-message app",
+    "type": "app",
+    "require": {
+        "slim/slim": "^3.3",
+        "slim/twig-view": "^2.1",
+        "hassankhan/config": "^0.10.0",
+        "twig/twig": "^1.24"
+    },
+    "authors": [
+        {
+            "name": "Mohammed Shokr",
+            "email": "mohammedshokr2014@gmail.com"
+        }
+    ]
+}
