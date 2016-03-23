@@ -18,6 +18,22 @@ $container['view'] = function ($c) {
     return $view;
 };
 
+$container['db'] = function ($c) {
+    return new PDO('mysql:host='. $c['config']->get('db.mysql.host') .';dbname='
+        .$c['config']->get('db.mysql.dbname'),
+        $c['config']->get('db.mysql.username'),
+        $c['config']->get('db.mysql.password')
+    );
+};
+
+$container['mail'] = function ($c) {
+    return new \Mailgun\Mailgun($c['config']->get('services.mailgun.secret'),
+        'https://api.mailgun.net/v3/sandboxd45c1529129b4dd080b0dd4140e6e54f.mailgun.org',
+        'v3',
+        true
+        );
+};
+
 
 $app = new \Slim\App($container);
 
