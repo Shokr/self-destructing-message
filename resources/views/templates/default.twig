@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+    <!-- icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified JavaScript
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+    -->
+
+    <title>Contact Form | self-destructing-message app</title>
+</head>
+<body>
+    <header>
+
+        <nav>
+            <div class="nav-wrapper" style="background-color: #00695c">
+                <a href="https://github.com/Shokr/self-destructing-message" class="brand-logo center">{% block logo %}{% endblock %}</a>
+            </div>
+        </nav>
+
+    </header>
+
+
+    <div class="container">
+        <div class="row">
+            <form class="col s12" action="#" method="post">
+
+                <div class="row">
+                    <div class="input-field col s12">
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <label for="email" data-error="wrong" data-success="right">Email</label>
+                        <br />
+                        <input name="email" id="email" type="email" class="validate">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">mode_edit</i>
+                        <label for="icon_prefix2">Message</label>
+                        <br />
+                        <textarea name="message" id="icon_prefix2" class="materialize-textarea"></textarea>
+                    </div>
+                </div>
+
+                <button class="btn waves-effect waves-light" style="background-color: #00695c" type="submit" name="action">Send
+                    <i class="material-icons right">send</i>
+                </button>
+            </form>
+        </div>
+    </div>
+
+
+</body>
+</html>
