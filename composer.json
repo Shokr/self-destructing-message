@@ -8,8 +8,7 @@
         "hassankhan/config": "^0.10.0",
         "twig/twig": "^1.24",
         "twig/extensions": "^1.3",
-        "mailgun/mailgun-php": "^1.8",
-        "mailchimp/mailchimp": "^2.0"
+        "mailgun/mailgun-php": "^1.8"
     },
     "authors": [
         {
